@@ -33,7 +33,7 @@ public class PaiDAOTest {
 		session.flush();
 		session.clear();
 
-		Pai paiComDeterminadosFilhos = new PaiDAO(session).buscaPaiComFilhosDeIdadeMaiorQue(1L, 10);
+		Pai paiComDeterminadosFilhos = new PaiDAO(session).buscaPaiComFilhosDeIdadeMaiorQue(10, 1L);
 		assertEquals(1, paiComDeterminadosFilhos.getFilhos().size());
 	}
 
