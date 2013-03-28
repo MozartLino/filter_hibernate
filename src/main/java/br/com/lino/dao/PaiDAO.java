@@ -12,7 +12,7 @@ public class PaiDAO {
 		this.session = session;
 	}
 
-	public Pai buscaPaiComFilhosDeIdadeMaiorQue(Long id, Integer idade) {
+	public Pai buscaPaiComFilhosDeIdadeMaiorQue(Integer idade, Long id) {
 		session.enableFilter("filterIdade").setParameter("idade", idade);
 		Pai pai = (Pai) session.load(Pai.class, id);
 		session.disableFilter("filterIdade");
