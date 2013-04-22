@@ -7,7 +7,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>mysql</groupId>
+			<groupId>mysql2</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.16</version>
 		</dependency>
